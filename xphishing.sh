@@ -165,12 +165,12 @@ check_update(){
 		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${ORANGE} Downloading Update..."
 		pushd "$HOME" > /dev/null 2>&1
 		curl --silent --insecure --fail --retry-connrefused \
-		--retry 3 --retry-delay 2 --location --output ".xphishing.tar.gz" "${tarball_url}"
+		--retry 3 --retry-delay 2 --location --output ".XPhishing.tar.gz" "${tarball_url}"
 
-		if [[ -e ".xphishing.tar.gz" ]]; then
-			tar -xf .xphishing.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
+		if [[ -e ".XPhishing.tar.gz" ]]; then
+			tar -xf .XPhishing.tar.gz -C "$BASE_DIR" --strip-components 1 > /dev/null 2>&1
 			[ $? -ne 0 ] && { echo -e "\n\n${RED}[${WHITE}!${RED}]${RED} Error occured while extracting."; reset_color; exit 1; }
-			rm -f .xphishing.tar.gz
+			rm -f .XPhishing.tar.gz
 			popd > /dev/null 2>&1
 			{ sleep 3; clear; banner_small; }
 			echo -ne "\n${GREEN}[${WHITE}+${GREEN}] Successfully updated! Run Xphishing again\n\n"${WHITE}
