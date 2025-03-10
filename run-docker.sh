@@ -8,7 +8,7 @@ if [[ ! -d "$BASE_DIR/auth" ]]; then
 	mkdir -p "$BASE_DIR/auth"
 fi
 
-CONTAINER="zphisher"
+CONTAINER="XPhishing"
 IMAGE="Amarchillale/XPhishing:latest"
 IMG_MIRROR="ghcr.io/Amarchillale/XPhishing:latest"
 MOUNT_LOCATION=${BASE_DIR}/auth
@@ -27,4 +27,4 @@ fi
 
 docker start --interactive "${CONTAINER}"
 
-# docker run --rm -ti --network="host" -v ${MOUNT_LOCATION}:/zphisher/auth/ --name "$CONTAINER" "$IMAGE"
+# docker run --rm -ti --network="host" -v ${MOUNT_LOCATION}:/XPhishing/auth/ --name "$CONTAINER" "$IMAGE"

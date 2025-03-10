@@ -3,9 +3,9 @@
 # https://github.com/Amarchillale/XPhishing
 
 if [[ $(uname -o) == *'Android'* ]];then
-	XPHISHING_ROOT="/data/data/com.termux/files/usr/opt/zphisher"
+	XPHISHING_ROOT="/data/data/com.termux/files/usr/opt/Xphishing"
 else
-	export XPHISHING_ROOT="/opt/zphisher"
+	export XPHISHING_ROOT="/opt/Xphishing"
 fi
 
 if [[ $1 == '-h' || $1 == 'help' ]]; then

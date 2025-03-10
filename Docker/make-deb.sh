@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Make Deb Package for Zphisher (^.^)
-_PACKAGE=zphisher
+# Make Deb Package for Xphishing (^.^)
+_PACKAGE=Xphishing
 _VERSION=2.3.5
 _ARCH="all"
 PKG_NAME="${_PACKAGE}_${_VERSION}_${_ARCH}.deb"
